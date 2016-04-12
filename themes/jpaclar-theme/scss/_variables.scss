@@ -1,0 +1,17 @@
+$primary-color: #000;
+$secondary-color: #fff;
+
+@mixin transition($seconds){
+  -webkit-transition: $seconds ease-in-out;
+  -moz-transition: $seconds ease-in-out;
+  -o-transition: $seconds ease-in-out;
+  transition: $seconds ease-in-out;
+}
+
+@mixin transform-rotate($degrees){
+  -moz-transform: rotate($degrees);
+  -webkit-transform: rotate($degrees);
+  -o-transform: rotate($degrees);
+  -ms-transform: rotate($degrees);
+  transform: rotate($degrees);
+}
